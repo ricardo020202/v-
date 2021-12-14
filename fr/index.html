@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/Favicon_v++.ico" type="image/x-icon">
+    <title>Vemasmas | D'accueil</title>
+</head>
+
+<body class="bg-black">
+    <header>
+        <!--Barra de navegacion pc-->
+        <div class="container d-none d-sm-none d-md-block d-xl-block">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top mynav">
+                <div class="container-fluid">
+                    <a class="navbar-brand ms-5" href="./index.html"><img src="../assets/logos/VerticalBlanco.svg" alt=""
+                            class="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link text-white me-5 item" href="./nosotros.html">
+                                <h5>Nous</h5>
+                            </a>
+                            <a class="nav-link text-white me-5 item" href="./grupo.html">
+                                <h5>Grouper</h5>
+                            </a>
+                            <a class="nav-link text-white me-5 item" href="./noticias.html">
+                                <h5>Informations</h5>
+                            </a>
+                            <a class="nav-link text-white me-5 item" href="./galeria.html">
+                                <h5>Galerie</h5>
+                            </a>
+                            <a class="nav-link text-white me-5 item" href="./contacto.html">
+                                <h5>Contact</h5>
+                            </a>
+                             <!--Seleccion de idioma-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle es" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Langage
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../index.html">Spagnol</a></li>
+                                    <li><a class="dropdown-item" href="../en/index.html">Anglais</a></li>
+                                    <li><a class="dropdown-item" href="../de/index.html">Allemand</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!--Barra de navegacion moviles-->
+        <div class="container-fluid d-block d-sm-block d-md-none">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top mynav">
+                <div class="container-fluid">
+                    <a class="navbar-brand ms-5" href="./index.html"><img src="../assets/logos/VerticalBlanco.svg" alt=""
+                            class="logo-mobile"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link text-white me-5 item" href="./nosotros.html">
+                                <h5>Nous</h5>
+                            </a>
+                            <a class="nav-link text-white me-5 item" href="./grupo.html">
+                                <h5>Grouper</h5>
+                            </a>
+                            <a class="nav-link text-white me-5 item" href="./noticias.html">
+                                <h5>Informations</h5>
+                            </a>
+                            <a class="nav-link text-white me-5 item" href="./galeria.html">
+                                <h5>Galerie</h5>
+                            </a>
+                            <a class="nav-link text-white me-5 item" href="./contacto.html">
+                                <h5>Contact</h5>
+                            </a>
+                            <!--Seleccion de idioma-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle es" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Langage
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../index.html">Spagnol</a></li>
+                                    <li><a class="dropdown-item" href="../en/index.html">Anglais</a></li>
+                                    <li><a class="dropdown-item" href="../de/index.html">Allemand</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="w-100">
+            <source src="../assets/videos/Home Hero Placeholder.mp4" type="video/mp4">
+        </video>
+    </header>
+
+    <!--seccion Quienes somos-->
+    <section class="my-5 bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <h2 class="text-white text-center">Qu'est-ce que Vemasmas?</h2>
+                    </div>
+                    <div class="row mt-5 mx-5">
+                        <p class="text-white text-center data-mlr-text">
+                            Nous sommes un groupe d'entreprises mexicain qui a commencé avec l'intelligence territoriale en utilisant
+                            de caméras au sol et d'avions sans pilote, <br> l'évolution de la technologie a
+                            conduit à s'aventurer dans la recherche et le développement de satellites, réussissant à entrer dans l'industrie
+                            espace avec des talents mexicains.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--News section-->
+    <section class="my-5 bg-black news">
+        <div class="container">
+            <div class="row my-5 fade-in-from-left">
+                <div class="col d-flex justify-content-center">
+                    <h2 class="text-white">Informations</h2>
+                </div>
+            </div>
+            <div class="row newsSection">
+
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion de objetivos pc-->
+    <section class="my-5 bg-black mini-baner d-none d-sm-none d-md-block d-xl-block">
+        <div class="container">
+            <div class="row">
+                <div class="col mini-baner-contenido">
+                    <div class="row">
+                        <h3 class="text-white vel">VITESSE</h3>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <h3 class="text-white ver">VÉRACITÉ</h3>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <h3 class="text-white var">VARIÉTÉ</h3>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <h3 class="text-white vol">VOLUMEN</h3>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <h3 class="text-white val">VALEUR</h3>
+                    </div>
+                </div>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" src="../assets/videos/Velocidad.mp4" class="mini-baner-vel"></video>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" src="../assets/videos/Velocidad.mp4" class="mini-baner-ver"></video>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" src="../assets/videos/Variedad.mp4" class="mini-baner-var"></video>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" src="../assets/videos/Volumen.mp4" class="mini-baner-vol"></video>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" src="../assets/videos/Valor.mp4" class="mini-baner-val"></video>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Seccion de objetivos moviles-->
+    <section class="my-5 bg-black mini-baner d-block d-sm-block d-md-none">
+        <div class="container">
+            <div class="row">
+                <div class="col mini-baner-contenido-mobile">
+                    <div class="row">
+                        <h3 class="text-white">VITESSE</h3>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <h3 class="text-white">VÉRACITÉ</h3>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <h3 class="text-white">VARIÉTÉ</h3>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <h3 class="text-white">VOLUME</h3>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <h3 class="text-white">VALEUR</h3>
+                    </div>
+                </div>
+                <img src="../assets/imagen.png" alt="" class="mini-baner-image">
+            </div>
+        </div>
+    </section>
+
+    <!--divider section-->
+    <section>
+        <div class="container my-5">
+            <img src="" alt="">
+        </div>
+    </section>
+
+    <!--Ceo seccion pc-->
+    <section class="ceo fade-in d-none d-sm-none d-md-none d-xl-block">
+        <div class="container">
+            <div class="row">
+                <img src="../assets/CEO.png" alt="" class="ceo-img">
+
+                <div class="col h-100">
+                    <div class="row ceo-content">
+                        <div class="col d-flex justify-content-end my-3">
+                            <img src="../assets/bullet.png" alt="" class="bullet my-5">
+                        </div>
+                        <div class="col d-flex align-items-center">
+                            <h2 class="text-white">
+                                Nous voulons être une référence pour l'industrie spatiale au Mexique et
+                                Amérique latine et
+                                être la première entreprise 100% mexicaine à construire et mettre en orbite un
+                                constellation de nanosatellites mexicains.
+                                <br>
+                                - Oscar Fredy -
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Ceo seccion moviles-->
+    <section class="ceo fade-in d-block d-sm-block d-md-none">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col d-flex justify-content-center align-items-center mt-3">
+                    <img src="../assets/CEO.png" alt="" class="ceo-img-mobile">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col h-100 ceo-content d-flex align-items-center mb-5">
+                    <h2 class="text-white text-center"> <img src="../assets/bullet.png" alt="" class="bullet-mobile">
+                        <br> 
+                            Nous voulons être une référence pour l'industrie spatiale au Mexique et
+                            Amérique latine et
+                            être la première entreprise 100% mexicaine à construire et mettre en orbite un
+                            constellation de nanosatellites mexicains.
+                        <br>
+                        - Oscar Fredy -
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Ceo seccion ipad-->
+    <section class="ceo fade-in d-none d-md-block d-lg-block d-xl-none">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col d-flex justify-content-center align-items-center mt-3">
+                    <img src="../assets/CEO.png" alt="" class="ceo-img-mobile">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col h-100 ceo-content d-flex align-items-center mb-5">
+                    <h2 class="text-white text-center"> <img src="../assets/bullet.png" alt="" class="bullet-mobile">
+                        <br> 
+                            Nous voulons être une référence pour l'industrie spatiale au Mexique et
+                            Amérique latine et
+                            être la première entreprise 100% mexicaine à construire et mettre en orbite un
+                            constellation de nanosatellites mexicains.
+                        <br>
+                        - Oscar Fredy -
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--divider section-->
+    <section>
+        <div class="container my-5">
+            <img src="" alt="">
+        </div>
+    </section>
+
+    <!--seccion grupo pc-->
+    <section class="container d-none d-sm-none d-md-block d-xl-block">
+        <div class="row">
+            <div class="col d-flex align-items-center justify-content-center">
+                <div class="row">
+                    <a href="./grupo.html#tax" class="text-white item">
+                        <h5>TAX</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="row">
+                    <img src="../assets/orange_divider.png" alt="" class="divider">
+                </div>
+            </div>
+            <div class="col d-flex align-items-center justify-content-center">
+                <div class="row">
+                    <a href="./grupo.html#taxinn" class="text-white item">
+                        <h5>INSIGHT INNOVATION</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="row">
+                    <img src="../assets/orange_divider.png" alt="" class="divider">
+                </div>
+            </div>
+            <div class="col d-flex align-items-center justify-content-center">
+                <div class="row">
+                    <a href="./grupo.html#timbox" class="text-white item">
+                        <h5>TIMBOX</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--seccion grupo moviles-->
+    <section class="container d-block d-sm-block d-md-none">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col d-flex align-items-center justify-content-center">
+                <a href="./grupo.html#tax" class="text-white item fade-in-from-left">
+                    <h5>TAX</h5>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex align-items-center justify-content-center">
+                <img src="../assets/orange_divider.png" alt="" class="divider-mobile">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex align-items-center justify-content-center">
+                <a href="./grupo.html#taxinn" class="text-white item fade-in-from-right">
+                    <h5>INSIGHT INNOVATION</h5>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex align-items-center justify-content-center">
+                <img src="../assets/orange_divider.png" alt="" class="divider-mobile">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex align-items-center justify-content-center">
+                <a href="./grupo.html#timbox" class="text-white item fade-in-from-left">
+                    <h5>TIMBOX</h5>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--divider section-->
+    <section>
+        <div class="container my-5">
+            <img src="" alt="">
+        </div>
+    </section>
+
+    <!--footer pc-->
+    <footer class="d-none d-sm-none d-md-block d-xl-block">
+        <div class="container-fluid bg-black">
+            <div class="row">
+                <div class="col ms-5 mt-5">
+                    <div class="row mb-3">
+                        <a href="./contacto.html" class="text-white">
+                            <h3>CONTACT</h3>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <ul class="ms-5">
+                            <li>
+                                <p class="text-white"><strong>Adresse:</strong> San Isidro 730, San Isidro Juriquilla,
+                                    <br> 76226 Santiago de Querétaro, Qro.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="text-white"><strong>Téléphone:</strong> 442 2291229</p>
+                            </li>
+                            <li>
+                                <p class="text-white"><strong>E-mail:</strong> CONTACTO@VEMASMAS.MX</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center mx-5">
+                    <div class="col ms-5 d-flex justify-content-center"><a href="fb-link"><img
+                                src="../assets/iconos/fb_icon.png" alt="" class="social-icons"></a></div>
+                    <div class="col ms-5 d-flex justify-content-center"><a href="ig-link"><img
+                                src="../assets/iconos/ig_icon.png" alt="" class="social-icons"></a></div>
+                    <div class="col ms-5 d-flex justify-content-center"><a href="yt-link"><img
+                                src="../assets/iconos/yt_icon.png" alt="" class="social-icons"></a></div>
+                </div>
+                <div class="col d-flex justify-content-end align-items-end me-5">
+                    <a href="./index.html"><img src="../assets/logos/HorizontalBlanco.svg" alt=""
+                            class="logo-footer"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-center">Droit d'auteur V++ 2020. Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Footer moviles-->
+    <footer class="d-block d-sm-block d-md-none">
+        <div class="container-fluid bg-black">
+            <div class="row">
+                <div class="col">
+                    <div class="row mb-3">
+                        <div class="col d-flex justify-content-center">
+                            <a href="./contacto.html" class="text-white">
+                                <h3>CONTACT</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <ul>
+                                <li>
+                                    <p class="text-white"><strong>Addresse:</strong> San Isidro 730, San Isidro
+                                        Juriquilla,
+                                        <br> 76226 Santiago de Querétaro, Qro.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="text-white"><strong>Téléphone:</strong> 442 2291229</p>
+                                </li>
+                                <li>
+                                    <p class="text-white"><strong>E-mail:</strong> CONTACTO@VEMASMAS.MX</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="col d-flex justify-content-center"><a href="fb-link"><img
+                                src="../assets/iconos/fb_icon.png" alt="" class="social-icons"></a></div>
+                    <div class="col d-flex justify-content-center"><a href="ig-link"><img
+                                src="../assets/iconos/ig_icon.png" alt="" class="social-icons"></a></div>
+                    <div class="col d-flex justify-content-center"><a href="yt-link"><img
+                                src="../assets/iconos/yt_icon.png" alt="" class="social-icons"></a></div>
+                </div>
+                <div class="col d-flex justify-content-center align-items-end me-5 my-4">
+                    <a href="./index.html"><img src="../assets/logos/HorizontalBlanco.svg" alt=""
+                            class="logo-footer-mobile"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-center">Droit d'auteur V++ 2020. Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="../js/fade-in.js"></script>
+
+    <script src="../js/navbar.js"></script>
+
+    <script src="../js/news.js"></script>
+
+    <script src="../js/miniBaner.js"></script>
+</body>
+
+</html>

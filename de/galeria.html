@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/galery-style.css">
+    <link rel="shortcut icon" href="../assets/Favicon_v++.ico" type="image/x-icon">
+    <title>Vemasmas | Galerie</title>
+</head>
+
+<body>
+    <header>
+        <!--Barra de navegacion pc-->
+        <div class="container d-none d-sm-none d-md-block d-xl-block">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top mynav">
+                <div class="container-fluid">
+                    <a class="navbar-brand ms-5" href="./index.html"><img src="../assets/logos/VerticalBlanco.svg" alt=""
+                            class="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link text-white me-5 item" href="./nosotros.html">
+                                <h5>Über uns</h5>
+                            </a>
+                            <a class="nav-link text-white me-5 item" href="./grupo.html">
+                                <h5>Gruppe</h5>
+                            </a>
+                            <a class="nav-link text-white me-5 item" href="./noticias.html">
+                                <h5>Nachrichten</h5>
+                            </a>
+                            <a class="nav-link text-white me-5 item" href="./galeria.html">
+                                <h5>Galerie</h5>
+                            </a>
+                            <a class="nav-link text-white me-5 item" href="./contacto.html">
+                                <h5>Kontakt</h5>
+                            </a>
+                             <!--Seleccion de idioma-->
+                             <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle es" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sprache
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../index.html">Spanisch</a></li>
+                                    <li><a class="dropdown-item" href="../en/index.html">Englisch</a></li>
+                                    <li><a class="dropdown-item" href="../fr/index.html">Französisch</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!--Barra de navegacion moviles-->
+        <div class="container-fluid d-block d-sm-block d-md-none">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top mynav">
+                <div class="container-fluid">
+                    <a class="navbar-brand ms-5" href="./index.html"><img src="../assets/logos/VerticalBlanco.svg" alt=""
+                            class="logo-mobile"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link text-white me-5 item" href="./nosotros.html">
+                                <h5>Über uns</h5>
+                            </a>
+                            <a class="nav-link text-white me-5 item" href="./grupo.html">
+                                <h5>Gruppe</h5>
+                            </a>
+                            <a class="nav-link text-white me-5 item" href="./noticias.html">
+                                <h5>Nachrichten</h5>
+                            </a>
+                            <a class="nav-link text-white me-5 item" href="./galeria.html">
+                                <h5>Galerie</h5>
+                            </a>
+                            <a class="nav-link text-white me-5 item" href="./contacto.html">
+                                <h5>Kontakt</h5>
+                            </a>
+                             <!--Seleccion de idioma-->
+                             <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle es" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sprache
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../index.html">Spanisch</a></li>
+                                    <li><a class="dropdown-item" href="../en/index.html">Englisch</a></li>
+                                    <li><a class="dropdown-item" href="../fr/index.html">Französisch</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!--carousel-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                    aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                    aria-label="Slide 9"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/galeria/DSC01175.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/galeria/DSC01181.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/galeria/DSC01195.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/galeria/DSC01197.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/galeria/DSC01199.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/galeria/DSC09763-2-Edit.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/galeria/DSC09769-Edit.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/galeria/DSC09772.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/galeria/DSC09800.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--heading pc-->
+        <section class="d-none d-sm-none d-md-none d-xl-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="heading text-white">
+                            Galerie
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!--heading moviles-->
+        <section class="d-block d-sm-block d-md-none d-xl-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="heading-mobile text-white">
+                            Galerie
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--heading ipad-->
+        <section class="d-block d-sm-block d-md-block d-xl-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="heading-mobile text-white">
+                            Glerie
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="gallery__item">
+                    <img src="../assets/galeria/DSC01175.jpg" alt="" class="w-100">
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="gallery__item">
+                    <img src="../assets/galeria/DSC01181.jpg" alt="" class="w-100">
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="gallery__item">
+                    <img src="../assets/galeria/DSC01195.jpg" alt="" class="w-100">
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="gallery__item">
+                    <img src="../assets/galeria/DSC01197.jpg" alt="" class="w-100">
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="gallery__item">
+                    <img src="../assets/galeria/DSC01199.jpg" alt="" class="w-100">
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="gallery__item">
+                    <img src="../assets/galeria/DSC09763-2-Edit.jpg" alt="" class="w-100">
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="gallery__item">
+                    <img src="../assets/galeria/DSC09769-Edit.jpg" alt="" class="w-100">
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="gallery__item">
+                    <img src="../assets/galeria/DSC09772.jpg" alt="" class="w-100">
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="gallery__item">
+                    <img src="../assets/galeria/DSC09800.jpg" alt="" class="w-100">
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--seccion galeria pc-->
+    <section class="gallery d-none d-sm-none d-md-none d-xl-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <label for="img-1" class="gallery__thumb"><img src="../assets/galeria/DSC01175.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                        <label for="img-2" class="gallery__thumb"><img src="../assets/galeria/DSC01181.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                        <label for="img-3" class="gallery__thumb"><img src="../assets/galeria/DSC01195.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                        <label for="img-4" class="gallery__thumb"><img src="../assets/galeria/DSC01197.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                        <label for="img-1" class="gallery__thumb"><img src="../assets/galeria/DSC01199.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
+                        <label for="img-2" class="gallery__thumb"><img src="../assets/galeria/DSC09763-2-Edit.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
+                        <label for="img-3" class="gallery__thumb"><img src="../assets/galeria/DSC09769-Edit.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">
+                        <label for="img-4" class="gallery__thumb"><img src="../assets/galeria/DSC09772.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">
+                        <label for="img-1" class="gallery__thumb"><img src="../assets/galeria/DSC09800.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+                <div class="col">
+                    
+                </div>
+                <div class="col">
+                    
+                </div>
+                <div class="col">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--seccion galeria moviles-->
+    <section class="gallery d-block d-sm-block d-md-block d-xl-none">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <label for="img-1" class="gallery__thumb"><img src="../assets/galeria/DSC01175.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                        <label for="img-2" class="gallery__thumb"><img src="../assets/galeria/DSC01181.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                        <label for="img-3" class="gallery__thumb"><img src="../assets/galeria/DSC01195.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                        <label for="img-4" class="gallery__thumb"><img src="../assets/galeria/DSC01197.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                        <label for="img-1" class="gallery__thumb"><img src="../assets/galeria/DSC01199.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
+                        <label for="img-2" class="gallery__thumb"><img src="../assets/galeria/DSC09763-2-Edit.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
+                        <label for="img-3" class="gallery__thumb"><img src="../assets/galeria/DSC09769-Edit.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">
+                        <label for="img-4" class="gallery__thumb"><img src="../assets/galeria/DSC09772.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="gallery__item" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">
+                        <label for="img-1" class="gallery__thumb"><img src="../assets/galeria/DSC09800.jpg" alt=""
+                                class="gallery_img" /></label>
+                    </div>
+                </div>
+                <div class="col">
+                    
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <!--footer pc-->
+    <footer class="d-none d-sm-none d-md-block d-xl-block">
+        <div class="container-fluid bg-black">
+            <div class="row">
+                <div class="col ms-5 mt-5">
+                    <div class="row mb-3">
+                        <a href="./contacto.html" class="text-white">
+                            <h3>KONTAKT</h3>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <ul class="ms-5">
+                            <li>
+                                <p class="text-white"><strong>Die Anschrift:</strong> San Isidro 730, San Isidro Juriquilla,
+                                    <br> 76226 Santiago de Querétaro, Qro.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="text-white"><strong>Telefon:</strong> 442 2291229</p>
+                            </li>
+                            <li>
+                                <p class="text-white"><strong>E-mail:</strong> CONTACTO@VEMASMAS.MX</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center mx-5">
+                    <div class="col ms-5 d-flex justify-content-center"><a href="fb-link"><img
+                                src="../assets/iconos/fb_icon.png" alt="" class="social-icons"></a></div>
+                    <div class="col ms-5 d-flex justify-content-center"><a href="ig-link"><img
+                                src="../assets/iconos/ig_icon.png" alt="" class="social-icons"></a></div>
+                    <div class="col ms-5 d-flex justify-content-center"><a href="yt-link"><img
+                                src="../assets/iconos/yt_icon.png" alt="" class="social-icons"></a></div>
+                </div>
+                <div class="col d-flex justify-content-end align-items-end me-5">
+                    <a href="./index.html"><img src="../assets/logos/HorizontalBlanco.svg" alt=""
+                            class="logo-footer"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-center">Copyright V++ 2020. Alle Rechte vorbehalten</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Footer moviles-->
+    <footer class="d-block d-sm-block d-md-none">
+        <div class="container-fluid bg-black">
+            <div class="row">
+                <div class="col">
+                    <div class="row mb-3">
+                        <div class="col d-flex justify-content-center">
+                            <a href="./contacto.html" class="text-white">
+                                <h3>KONTAKT</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <ul>
+                                <li>
+                                    <p class="text-white"><strong>Die Anschrift:</strong> San Isidro 730, San Isidro
+                                        Juriquilla,
+                                        <br> 76226 Santiago de Querétaro, Qro.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="text-white"><strong>Telefon:</strong> 442 2291229</p>
+                                </li>
+                                <li>
+                                    <p class="text-white"><strong>E-mail:</strong> CONTACTO@VEMASMAS.MX</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="col d-flex justify-content-center"><a href="fb-link"><img
+                                src="../assets/iconos/fb_icon.png" alt="" class="social-icons"></a></div>
+                    <div class="col d-flex justify-content-center"><a href="ig-link"><img
+                                src="../assets/iconos/ig_icon.png" alt="" class="social-icons"></a></div>
+                    <div class="col d-flex justify-content-center"><a href="yt-link"><img
+                                src="../assets/iconos/yt_icon.png" alt="" class="social-icons"></a></div>
+                </div>
+                <div class="col d-flex justify-content-center align-items-end me-5 my-4">
+                    <a href="./index.html"><img src="../assets/logos/HorizontalBlanco.svg" alt=""
+                            class="logo-footer-mobile"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-center">Copyright V++ 2020. Alle Rechte vorbehalten</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    
+    <script src="../js/navbar.js"></script>
+</body>
+
+</html>
