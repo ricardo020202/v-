@@ -1,4 +1,4 @@
-const url = 'https://www.googleapis.com/blogger/v3/blogs/2689438930071764234/posts?key=AIzaSyC7tNifcUJvxoy38dozXRwkwfeAmy3jeD8'
+const url = 'https://www.googleapis.com/blogger/v3/blogs/2689438930071764234/posts?key=AIzaSyC7tNifcUJvxoy38dozXRwkwfeAmy3jeD8&fetchImages=true'
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchApi()
@@ -12,7 +12,7 @@ const fetchApi = async () => {
         for (var i = 0; i < data.items.length; i++) {
             const title = data.items[i].title
             const postUrl = data.items[i].url
-            const thumbnail = data.items[i].author.image.url
+            const thumbnail = data.items[i].images[0].url
 
             console.log(title)
             console.log(postUrl)
@@ -24,7 +24,7 @@ const fetchApi = async () => {
             card.className = 'card-body';
             
             const content = `
-            <div class="col d-flex justify-content-center">
+            <div class="col d-flex justify-content-center card-news wave">
                 <a href="${postUrl}">
                     <div class="wrapper card-news">
                         <div class="card card-img">
